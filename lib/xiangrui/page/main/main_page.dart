@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_application/ui/page/guide/guide_page.dart';
-import 'package:flutter_application/xiangrui/page/home/home_page.dart';
+import 'package:flutter_application/ui/page/home/home_page.dart';
 import 'package:flutter_application/view_model/user_view_model.dart';
 import 'package:provider/provider.dart';
 

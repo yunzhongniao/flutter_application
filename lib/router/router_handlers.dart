@@ -8,9 +8,9 @@ import 'package:flutter_application/ui/page/goods/home_category_goods_page.dart'
 import 'package:flutter_application/ui/page/goods/search_goods_page.dart';
 import 'package:flutter_application/ui/page/goods/submit_success_page.dart';
 import 'package:flutter_application/ui/page/home/brand_detail_page.dart';
-import 'package:flutter_application/ui/page/home/home_page.dart';
+import 'package:flutter_application/xiangrui/page/home/home_page.dart';
 import 'package:flutter_application/ui/page/404/not_find_page.dart';
-import 'package:flutter_application/ui/page/home/main_page.dart';
+import 'package:flutter_application/xiangrui/page/main/main_page.dart';
 import 'package:flutter_application/ui/page/home/project_selection_detail_page.dart';
 import 'package:flutter_application/ui/page/login/login_page.dart';
 import 'package:flutter_application/ui/page/login/register_page.dart';

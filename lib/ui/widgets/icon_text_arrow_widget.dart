@@ -18,7 +18,7 @@ class IconTextArrowView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: ScreenUtil().setHeight(AppDimens.DIMENS_120),
+        height: ScreenUtil().setHeight(AppDimens.DIMENS_100),
         width: double.infinity,
         child: InkWell(
           highlightColor: AppColors.COLOR_FFFFFF,
