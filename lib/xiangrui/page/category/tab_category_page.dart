@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application/constant/app_colors.dart';
 import 'package:flutter_application/constant/app_dimens.dart';
 import 'package:flutter_application/constant/app_strings.dart';
+import 'package:flutter_application/constant/app_xiangrui_strings.dart';
 import 'package:flutter_application/constant/text_style.dart';
 import 'package:flutter_application/model/category_entity.dart';
 import 'package:flutter_application/ui/widgets/empty_data.dart';
 import 'package:flutter_application/utils/navigator_util.dart';
 import 'package:flutter_application/utils/refresh_state_util.dart';
-import 'package:flutter_application/view_model/tab_category_view_model.dart';
+import 'package:flutter_application/xiangrui/view_model/tab_category_view_model.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
@@ -33,28 +34,17 @@ class _TabCategoryPageState extends State<TabCategoryPage> {
       create: (_) => _tabCategoryViewModel,
       child: Scaffold(
           appBar: AppBar(
-            title: Column(
-              children: [
-                Text(AppStrings.CATEGORY),
-                TextField(
-                  textInputAction: TextInputAction.search,
-                  style: FMTextStyle.color_333333_size_42,
-                  decoration: InputDecoration(
-                    prefixIcon: Icon(
-                      Icons.search,
-                      size: ScreenUtil().setWidth(AppDimens.DIMENS_80),
-                      color: AppColors.COLOR_FF5722,
-                    ),
-                    hintText: AppStrings.GOODS_SEARCH_HINT,
-                    hintStyle: FMTextStyle.color_999999_size_42,
-                    enabledBorder: UnderlineInputBorder(
-                      borderSide: BorderSide(color: Colors.transparent),
-                    ),
-                  ),
-                )
-              ],
-            ),
+            title: Text(AppXiangruiStrings.FABRICS),
             centerTitle: true,
+            actions: <Widget>[
+              IconButton(
+                icon: Icon(
+                  Icons.search,
+                  color: AppColors.COLOR_FFFFFF,
+                ),
+                onPressed: () {},
+              )
+            ],
           ),
           body: Consumer<TabCategoryViewModel>(
             builder: (context, model, child) {
@@ -227,16 +217,16 @@ class _TabCategoryPageState extends State<TabCategoryPage> {
             Image.network(
               categoryEntity.picUrl,
               fit: BoxFit.fill,
-              width: ScreenUtil().setWidth(AppDimens.DIMENS_160 - 10),
-              height: ScreenUtil().setHeight(AppDimens.DIMENS_160 - 10),
+              width: ScreenUtil().setWidth(AppDimens.DIMENS_160),
+              height: ScreenUtil().setHeight(AppDimens.DIMENS_160),
             ),
             Padding(
               padding: EdgeInsets.only(
-                  top: ScreenUtil().setHeight(AppDimens.DIMENS_3)),
+                  top: ScreenUtil().setHeight(AppDimens.DIMENS_10)),
             ),
             Text(
               categoryEntity.name,
-              style: FMTextStyle.color_333333_size_26,
+              style: FMTextStyle.color_333333_size_42,
             ),
           ],
         ),

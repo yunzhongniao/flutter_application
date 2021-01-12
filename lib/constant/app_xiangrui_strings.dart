@@ -1,4 +1,6 @@
 class AppXiangruiStrings {
+  static const String FABRICS = "面料";
+
   static const String LOCATION = "地址管理";
   static const String MY_ORDERS = "我的订单";
   static const String SCORE = "积分兑换";

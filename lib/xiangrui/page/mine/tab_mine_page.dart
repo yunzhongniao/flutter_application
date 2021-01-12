@@ -142,9 +142,6 @@ class _TabMinePageState extends State<TabMinePage> {
         width: double.infinity,
         height: ScreenUtil().setHeight(AppDimens.DIMENS_100),
         child: RaisedButton(
-          shape: RoundedRectangleBorder(
-              borderRadius:
-                  BorderRadius.all(Radius.circular(AppDimens.DIMENS_30))),
           color: AppColors.COLOR_FF5722,
           onPressed: () => _logout(),
           child:

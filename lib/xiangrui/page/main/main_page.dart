@@ -12,8 +12,9 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
-    return Provider.of<UserViewModel>(context).isFirst
-        ? GuidePage()
-        : HomePage();
+    // return Provider.of<UserViewModel>(context).isFirst
+    //     ? GuidePage()
+    //     : HomePage();
+    return HomePage();
   }
 }

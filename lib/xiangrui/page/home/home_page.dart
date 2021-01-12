@@ -3,7 +3,7 @@ import 'package:flutter_application/constant/app_colors.dart';
 import 'package:flutter_application/constant/app_strings.dart';
 import 'package:flutter_application/event/tab_select_event.dart';
 import 'package:flutter_application/ui/page/home/tab_cart_page.dart';
-import 'package:flutter_application/ui/page/home/tab_category_page.dart';
+import 'package:flutter_application/xiangrui/page/category/tab_category_page.dart';
 import 'package:flutter_application/xiangrui/page/mine/tab_mine_page.dart';
 import 'package:flutter_application/ui/page/home/tabhome/tab_home_page.dart';
 import 'package:flutter_application/ui/page/plan/tab_plan_page.dart';
